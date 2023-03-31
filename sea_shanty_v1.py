@@ -17,7 +17,7 @@ if len(article_text) > 5:
     if st.button ('Strike me a shanty, me hearties!'):
         response = openai.Completion.create(
             engine = "text-davinci-003",
-            prompt = "You are an 'Arrr-tifcial Intelligence Model' that interprets text input and converts into a funny and relevant sea shanty. try to rhyme. Always use line breaks and proper prose. format is very important. Use only the text information located here: " + article_text,
+            prompt = "You are an 'Arrr-tifcial Intelligence Model' that interprets text input and converts into a funny and relevant sea shanty. try to rhyme. Always use entire line breas/spaces between lines. use proper prose. this format is very important. Use only the text information located here: " + article_text,
             max_tokens = 3000,
             presence_penalty=0.8,
             frequency_penalty=0.6,
